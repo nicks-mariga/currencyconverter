@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Finance TechPro</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Stock Market</a></li>
+                <li><a href="#">Currency Converter</a></li>
+                <li><a href="#">News</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="stock-ticker">
+        <h2>Stock Market Ticker</h2>
+        <div id="ticker">
+            <!-- Stocks will be displayed here -->
+        </div>
+    </section>
+
+    <section id="currency-converter">
+        <h2>Currency Converter</h2>
+        <form id="converter">
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" name="amount">
+            
+            <label for="from">From:</label>
+            <select id="from" name="from">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+            </select>
+
+            <label for="to">To:</label>
+            <select id="to" name="to">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+            </select>
+
+            <button type="button" onclick="convertCurrency()">Convert</button>
+        </form>
+
+        <p id="conversion-result"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Finance TechPro. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
